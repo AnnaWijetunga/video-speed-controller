@@ -19,7 +19,14 @@
   const bar = speed.querySelector('.speed-bar');
   const video = document.querySelector('.flex');
 
+  // visual part first
+  speed.addEventListener('mousemove', function() {
+      console.log(e);
+      // can't assume the bar will be at the top, there may be padding
+      const y = e.pageY - this.offsetTop;
+  });
   
+
 
 </script>
 </body>
