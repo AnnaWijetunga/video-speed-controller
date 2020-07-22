@@ -33,8 +33,9 @@
       bar.style.height = height;
 
       const playbackRate = percent * (max - min) + min; 
-      bar.textContent = playbackRate;
-       
+      bar.textContent = playbackRate.toFixed(2) + 'x';
+      video.playbackRate = playbackRate;
+
  });
   
 
