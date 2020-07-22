@@ -20,10 +20,11 @@
   const video = document.querySelector('.flex');
 
   // visual part first
-  speed.addEventListener('mousemove', function() {
+  speed.addEventListener('mousemove', function(e) {
       console.log(e);
       // can't assume the bar will be at the top, there may be padding
       const y = e.pageY - this.offsetTop;
+      const percent = y / this.offsetHeight;
   });
   
 
