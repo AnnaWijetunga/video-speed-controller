@@ -21,10 +21,15 @@
 
   // visual part first
   speed.addEventListener('mousemove', function(e) {
-      console.log(e);
+      // console.log(e);
       // can't assume the bar will be at the top, there may be padding
       const y = e.pageY - this.offsetTop;
       const percent = y / this.offsetHeight;
+      // console.log(percent);
+      const min = 0.4;
+      const max = 4;
+      const height = Math.round(percent *100) + '%';
+      console.log(height);
   });
   
 
